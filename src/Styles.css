@@ -1,0 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+
+*{
+  font-family: 'Baloo 2', cursive, sans-serif !important;
+  list-style: none;
+}
+
+p {
+  font-size: 18px;
+}
+
+
+.header{
+    display: fixed;
+    
+  }
+   
+  .stc-primary{
+    background-color: #1A4CED;
+  }
+  
+  .about-section{
+    background-size: cover !important;
+    display: block;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    width: 100% !important;
+    height: 500px;
+    background-image: url("./assets/img/background-waves.png") !important;
+    background-color: #1A4CED;
+    box-shadow: 0px 4px 51px rgba(0, 0, 0, 0.46);
+  }
+
+  @media(max-width:991.99px){
+    .about-section{
+      height: auto !important;
+    }
+  }
+
+
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+      transform: translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translatey(0px);
+    }
+  }
+  
+
+  .about-section h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 20%;
+    color: #fff;
+  }
+
+  .about-section p{
+    color: #fff;
+    margin-top: 20px;
+  }
+
+  .bg-green{
+    width: 100%;
+    padding: 5% 0px;
+    
+    color: #fff;
+
+
+    background-size: cover !important;
+    display: block;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    width: 100% !important;
+    background-image: url("./assets/img/background-green.png") !important;
+    box-shadow: 0px 4px 51px rgba(0, 0, 0, 0.46);
+  }
+
+  
+
+  .bg-green h3{
+    color: #fff !important ;
+  }
+
+  
+
+  .about-section .doctors-stc svg{
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-section svg{
+    margin-top: 30px;
+  }
+
+  .card-section{
+    position: relative;
+    bottom: 100px;
+  }
+
+  .card-icon{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  
+ 
+  .container .device-about h3{
+    color: #54B488;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .container .device-img img{
+    width: 90%;
+  }
+
+  .mt-5percent{
+    margin-top: 5%;
+  }
+
+
+
+  .form-card{
+    background: #1A4CED;
+    box-shadow: 0px 4px 51px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 50px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  .form-card h3{
+    color: #fff;
+  }
+
+  .form-card input,
+  textarea {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+  }
+
+  .form-card form .row{
+      margin-top: 20px;
+  }
+
+  .form-card form input,
+   textarea{
+    padding: 5px;
+    padding-left: 35px;
+    width: 100%;
+  }
+
+  .form-card form .input-form svg{
+    height: 26px;
+    position: relative;
+    top: 30px;
+  }
+
+  .form-card form textarea {
+    margin-top: 30px;
+    padding-left: 3px !important;
+  }
+
+  .form-card form button {
+    background: #54B488;
+  box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 6px 16px;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  }
+
+  footer {
+    background-size: cover !important;
+    display: block;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    width: 100% !important;
+    padding: 10%;
+    background-color: #F3F3F3;
+  }
+
+  .footer-header{
+    text-align: center;
+  }
+
+  .footer-header img{
+    width: 15%;
+  }
+
+  .footer-content{
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  footer .li-title{
+    font-weight: bold;
+    font-size: 20px;
+    color: #54B488;
+  }
+
+
+
+
+
+
+
+  @media(max-width: 768.99px){
+    .form-card  {
+       width: 100%;
+       margin-top: 30px;
+       
+    }
+
+    .form-card form button {
+      padding: 30px 16px;
+      margin-top: 30px;
+      width: 100%;
+    }
+   
+    footer nav ul li a{
+      color: #A4A4A4 !important;
+    }
+
+  }
