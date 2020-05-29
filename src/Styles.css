@@ -12,8 +12,9 @@ p {
 }
 
 
-.header{
+nav{
     display: fixed;
+    color: #fff;
     
   }
    
@@ -135,7 +136,9 @@ p {
     margin-top: 5%;
   }
 
-
+  .mt-20px{
+    margin-top: 20px;
+  }
 
   .form-card{
     background: #1A4CED;
@@ -220,6 +223,19 @@ p {
     font-weight: bold;
     font-size: 20px;
     color: #54B488;
+  }
+
+  .hover-green{
+    color: #fff;
+  }
+
+  .hover-green:hover{
+    background-color: #54B488;
+    color: #fff;
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.48);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
   }
 
 

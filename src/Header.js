@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import stcLogo from './assets/img/stc-logo.png'
-
+import { Link } from 'react-router-dom'
 
 
 import {
@@ -20,26 +20,25 @@ const Header = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="header">
+    <nav className="header">
       <Navbar color="primary"  expand="md">
-        <NavbarBrand href="/"><img src={stcLogo} alt="Logo" /></NavbarBrand>
+        <NavbarBrand tag={Link} to='/'><img src={stcLogo} alt="Logo" /></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Sobre</NavLink>
+              <NavLink tag={Link} to='/sistemaWeb' className='hover-green'>Sistema Web</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Sistema Web</NavLink>
+              <NavLink tag={Link} to='/aplicativo'  className='hover-green'>Aplicativo</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Aplicativo</NavLink>
+              <NavLink tag={Link} to='/contato' className='hover-green'>Contato</NavLink>
             </NavItem>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
-    </div>
+    </nav>
   );
 }
 

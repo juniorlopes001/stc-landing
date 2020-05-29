@@ -6,7 +6,7 @@ import personSvg from "./assets/img/person.svg";
 const Form = () => {
   return (
 
-    <div className='bg-secundary'>
+    <div className='bg-secundary mt-20px'>
    <div className="container-fluid">
       <div className="form-card">
         <h3>Solicite uma demonstração</h3>

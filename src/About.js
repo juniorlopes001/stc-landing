@@ -8,6 +8,7 @@ import notificacaoStc from "./assets/img/notificacao.svg";
 const About = () => {
   return (
     <>
+    
       <div className="about-section">
         <div className="container">
           <div className="row">
